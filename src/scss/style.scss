@@ -1,0 +1,64 @@
+@import "config";
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: $light-gray;
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    background: $color-white;
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .card-heading{
+        width: 100%;
+        height: 70%;
+
+        img{
+            max-width: 100%;
+            border-radius: .5em;
+        }
+    }
+
+    .card-body{
+        width: 90%;
+        margin: 0 auto;
+        height: 30%;
+        font-family: $ff-primary;
+        text-align: center;
+        
+        h1{
+            padding: .5em .5em 0;
+            font-size: $fz-heading;
+            font-weight: $fw-large;
+            color: $dark-blue;
+        }
+
+        p{
+            font-size: $fz-paragraph;
+            padding: 1em .8em 0;
+            color: $grayish-blue;
+        }
+    }
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
